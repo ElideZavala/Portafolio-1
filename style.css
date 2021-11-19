@@ -7,7 +7,7 @@
 }
 
 img {
-	width: 30%;
+	width: 100%;
 }
 
 /******** Componentes de utilidad ********/
@@ -23,7 +23,8 @@ img {
 --color3:  #fad4c0;
 --color4:  #64b6ac;
 --color4m: #64b6ac8e;
---color5:  #c0fdfb; 
+--color5: #6497b6;
+--color6:  #c0fdfb; 
 }
 
 body {
@@ -37,8 +38,44 @@ body {
 
 /******** Lado Nav  *********/
 aside#side-nav {
-	position: relative;
+	position: sticky;
 	top: 0;
 	left: 0;
 	height: 100vh;
+}
+
+div.side-nav__content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--color2);
+}
+
+div.side-nav__content--logo {
+	width: calc(3vw + 2vh);
+	/* object-fit: cover; */
+}
+
+ul.side-nav__content--social {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+ul.side-nav__content--social a i {
+	font-size: calc(1rem + 0.66667vw);
+	color: var(--color4);
+	text-shadow: 0 0 10px var(--color4);
+
+	padding-bottom: calc(2rem + 0.6667vw);
+}
+
+ul.side-nav__content--social a i:hover,
+ul.side-nav__content--social a i:active {
+	color: var(--color5);
+	text-shadow: 0 0 15px var(--color5);
 }
