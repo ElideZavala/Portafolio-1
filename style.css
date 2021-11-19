@@ -1,8 +1,44 @@
-* {
-	padding: 0;
+*,
+*::before,
+*::after {
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 30%;
+}
+
+/******** Componentes de utilidad ********/
+:root {
+	font-size: 62.5%;
+
+	/* Propiedades personalizadas */
+
+	/* Main Color */
+--color1:  #b09399;
+--color1m: #b0939998; 
+--color2:  #fee9e1;
+--color3:  #fad4c0;
+--color4:  #64b6ac;
+--color4m: #64b6ac8e;
+--color5:  #c0fdfb; 
 }
 
 body {
-	background-color: #999;
+	font-family: "Baloo Tamma 2", cursive;
+	line-height: 1.8;
+	display: flex;
+}
+
+/******** estilo principal *********/
+
+
+/******** Lado Nav  *********/
+aside#side-nav {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100vh;
 }
