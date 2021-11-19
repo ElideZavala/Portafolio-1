@@ -70,7 +70,6 @@ ul.side-nav__content--social a i {
 	font-size: calc(1rem + 0.66667vw);
 	color: var(--color4);
 	text-shadow: 0 0 10px var(--color4);
-
 	padding-bottom: calc(2rem + 0.6667vw);
 }
 
