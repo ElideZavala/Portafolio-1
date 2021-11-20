@@ -33,10 +33,24 @@ body {
 	display: flex;
 }
 
-/******** estilo principal *********/
+/* List items */
+li {
+	list-style: none;
+}
+
+/* Pilar Etiquetas */
+a:link,
+a:visited {
+	text-decoration: none;
+	color: var(--color2);
+	text-shadow: 0 0 10px white;
+	font-size: 2rem;
+}
+
+/*-**-**-**-**-**-**-**-**-* estilo principal *-**-**-**-**-**-**-**-**-*/
 
 
-/******** Lado Nav  *********/
+/*-*-**-**-**-**-**-**-**-**-** Lado Nav *-**-**-**-**-**-**-**-**-* *-*/
 aside#side-nav {
 	position: sticky;
 	top: 0;
@@ -77,4 +91,42 @@ ul.side-nav__content--social a i:hover,
 ul.side-nav__content--social a i:active {
 	color: var(--color5);
 	text-shadow: 0 0 15px var(--color5);
+}
+
+/*-*-**-**-**-**-**-**-**-**-** Side Nav *-**-**-**-**-**-**-**-**-* *-*/
+/* Todo el contenido que contiene main */
+main {
+	flex: 1;
+}
+
+/*-*-**-**-**-**-**-**-**-**-** Main Nav Header *-**-**-**-**-**-**-**-**-* *-*/
+header#header {
+	background-color: var(--color4);
+	height: calc(3vw + 3vh);
+	z-index: 2;
+}
+
+nav#header__main-nav {
+	height: 100%;
+}
+
+ul.header__main-nav--links {
+	/* solo oara demostracion */
+
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+ul.header__main-nav--links li {
+	padding-right: 3vw;
+}
+
+ul.header__main-nav--links li a {
+	position: relative;
+	padding: 0.2rem 0.6rem;
+	font-size: calc(1rem + 0.66667vw);
 }
