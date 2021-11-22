@@ -175,9 +175,13 @@ ul.header__main-nav--links li a:active::after {
 		height: 100%;
 		position: fixed;
 		top: 0;
-		right: 0rem;
+		right: -30rem;
 		background-color: var(--color4m);
 		text-align: center;
+	}
+	
+	.clicked {
+		left: 55%;
 	}
 
 	.header__main--hamburger {
