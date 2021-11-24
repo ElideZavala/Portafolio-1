@@ -165,7 +165,7 @@ ul.header__main-nav--links li a:active::before,
 ul.header__main-nav--links li a:hover::after,
 ul.header__main-nav--links li a:active::after {
 	transform: scaleX(1);
-	background-color: var(--color3);
+	background-color: var(--color2);
 }
 
 /*-*-**-**-**-**-**-**-**-**-** Showcase / Hero *-**-**-**-**-**-**-**-**-* *-*/
@@ -208,14 +208,40 @@ div.showcase__content {
 	width: 9rem;
 	text-transform: uppercase;
 	font-size: 1.5rem;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 0.2rem;
 	position: relative;
-	color: var(--color2);
+	color: var(--color4);
 }
+
+.showcase__content--link:link::after,
+.showcase__content--link:visited::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--color2);
+	width: 100%;
+	height: 100%;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.45s;
+
+	z-index: -1;
+}
+
+.showcase__content--link:hover::after,
+.showcase__content--link:active::after {
+	transform: scaleX(1);
+	transform-origin: left;
+} 
 
 /*-*-**-**-**-**-**-**-**-**-** Main Nav Header *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 610px) {
+
+	ul.header__main-nav--links li a {
+		color: var(--color1);
+	}
 	
 	nav#header__main-nav {
 		width: 30rem;
