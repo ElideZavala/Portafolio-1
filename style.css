@@ -18,7 +18,7 @@ img {
 
 	/* Main Color */
 --color1:  #cae9f9;
---color1m: #cae9f998
+--color1m: #cae9f998;
 --color2:  #6074ba;
 --color2m: #6074ba98; 
 --color3:  #724ca3;
@@ -182,7 +182,9 @@ section#showcase {
 }
 
 div.showcase__content {
-	background-color: ;
+	background-color: var(--color1m);
+	padding: calc(1rem + 2vw);
+	height: calc(5rem + 20vmax);
 }
 
 /*-*-**-**-**-**-**-**-**-**-** Main Nav Header *-**-**-**-**-**-**-**-**-* *-*/
