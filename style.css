@@ -17,14 +17,15 @@ img {
 	/* Propiedades personalizadas */
 
 	/* Main Color */
---color1:  #b09399;
---color1m: #b0939998; 
---color2:  #fee9e1;
---color3:  #fad4c0;
---color4:  #64b6ac;
---color4m: #64b6ac8e;
---color5: #6497b6;
---color6:  #c0fdfb; 
+--color1:  #cae9f9;
+--color1m: #cae9f998
+--color2:  #6074ba;
+--color2m: #6074ba98; 
+--color3:  #724ca3;
+--color4:  #362449;
+--color4m: #12121c8e;
+--color5: #180520;
+--color6:  #cbd2e2; 
 }
 
 body {
@@ -42,8 +43,8 @@ li {
 a:link,
 a:visited {
 	text-decoration: none;
-	color: var(--color2);
-	text-shadow: 0 0 10px white;
+	color: var(--color6);
+	text-shadow: 0 0 10px var(--color1);
 	font-size: 2rem;
 }
 
@@ -63,7 +64,8 @@ div.side-nav__content {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: var(--color2);
+	background-color: var(--color3);
+	box-shadow: 0 0 20px var(--color2m);
 }
 
 div.side-nav__content--logo {
@@ -82,7 +84,7 @@ ul.side-nav__content--social {
 
 ul.side-nav__content--social a i {
 	font-size: calc(1rem + 0.66667vw);
-	color: var(--color4);
+	color: var(--color1);
 	text-shadow: 0 0 10px var(--color4);
 	padding-bottom: calc(2rem + 0.6667vw);
 }
@@ -90,7 +92,7 @@ ul.side-nav__content--social a i {
 ul.side-nav__content--social a i:hover,
 ul.side-nav__content--social a i:active {
 	color: var(--color5);
-	text-shadow: 0 0 15px var(--color5);
+	text-shadow: 0 0 15px var(--color4);
 }
 
 /*-*-**-**-**-**-**-**-**-**-** Side Nav *-**-**-**-**-**-**-**-**-* *-*/
@@ -101,7 +103,7 @@ main {
 
 /*-*-**-**-**-**-**-**-**-**-** Main Nav Header *-**-**-**-**-**-**-**-**-* *-*/
 header#header {
-	background-color: var(--color4);
+	background-color: var(--color1);
 	height: calc(3vw + 3vh);
 	z-index: 2;
 }
@@ -112,10 +114,8 @@ nav#header__main-nav {
 
 ul.header__main-nav--links {
 	/* solo oara demostracion */
-
 	width: 100%;
 	height: 100%;
-
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -129,6 +129,8 @@ ul.header__main-nav--links li a {
 	position: relative;
 	padding: 0.2rem 0.6rem;
 	font-size: calc(1rem + 0.66667vw);
+	color: var(--color5);
+	text-shadow: 0 0 10px var(--color3);
 }
 
 ul.header__main-nav--links li a:link::before,
@@ -140,8 +142,7 @@ ul.header__main-nav--links li a:visited::after {
 	left: 0;
 	width: 100%;
 	height: 0.25rem;
-	background-color: white;
-
+	background-color: var(--color3);
 	transform: scaleX(0);
 	transition: transform 0.6s cubic-bezier(1, 0, 0, 1);
 	transform-origin: left;
@@ -164,7 +165,24 @@ ul.header__main-nav--links li a:active::before,
 ul.header__main-nav--links li a:hover::after,
 ul.header__main-nav--links li a:active::after {
 	transform: scaleX(1);
-	background-color: var(--color2);
+	background-color: var(--color3);
+}
+
+/*-*-**-**-**-**-**-**-**-**-** Showcase / Hero *-**-**-**-**-**-**-**-**-* *-*/
+section#showcase {
+	height: 100vh;
+	background-image: url(image/cosmos.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+div.showcase__content {
+	background-color: ;
 }
 
 /*-*-**-**-**-**-**-**-**-**-** Main Nav Header *-**-**-**-**-**-**-**-**-* *-*/
@@ -264,3 +282,4 @@ ul.header__main-nav--links li a:active::after {
 	}
 
 }
+
