@@ -98,7 +98,7 @@ ul.side-nav__content--social a i:active {
 /*-*-**-**-**-**-**-**-**-**-** Lado universe *-**-**-**-**-**-**-**-**-* *-*/
 .universe {
 	color: #fff;
-	margin: 2rem;
+	margin: 10rem;
 }
 
 /*-*-**-**-**-**-**-**-**-**-** Side Nav *-**-**-**-**-**-**-**-**-* *-*/
@@ -294,12 +294,23 @@ section#showcase {
 		top: 2rem;
 		right:3rem;
 		cursor: pointer;	
-		background-color: var(--color3);
+		background-color: var(--color5);
+		/* box-shadow: 0 0 15px var(--color3); */
 		padding: 1rem;
 		border-radius: 50%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;        
+		animation: light 1s alternate infinite;
+	}
+
+	@keyframes light {
+		from {
+			box-shadow: 0 0 50px tomato;
+		}
+		to {
+			box-shadow: 0 0 50px yellow
+		}		
 	}
 
 	.line {
