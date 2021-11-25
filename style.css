@@ -50,7 +50,6 @@ a:visited {
 
 /*-**-**-**-**-**-**-**-**-* estilo principal *-**-**-**-**-**-**-**-**-*/
 
-
 /*-*-**-**-**-**-**-**-**-**-** Lado Nav *-**-**-**-**-**-**-**-**-* *-*/
 aside#side-nav {
 	position: sticky;
@@ -93,6 +92,13 @@ ul.side-nav__content--social a i:hover,
 ul.side-nav__content--social a i:active {
 	color: var(--color5);
 	text-shadow: 0 0 15px var(--color4);
+}
+
+
+/*-*-**-**-**-**-**-**-**-**-** Lado universe *-**-**-**-**-**-**-**-**-* *-*/
+.universe {
+	color: #fff;
+	margin: 2rem;
 }
 
 /*-*-**-**-**-**-**-**-**-**-** Side Nav *-**-**-**-**-**-**-**-**-* *-*/
@@ -185,9 +191,21 @@ div.showcase__content {
 	background-color: var(--color1m);
 	padding: calc(1rem + 2vw);
 	height: calc(5rem + 20vmax);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	display: flex; flex-direction: column; justify-content: space-between;
+	color: rgba(0, 0, 0, 0.098);
+	text-shadow: 5px 5px 0px #000;
+	animation: hero 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes hero {
+	0% {
+		transform: translateX(100rem) rotate(360deg);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 
 .showcase__content--title {
@@ -212,6 +230,8 @@ div.showcase__content {
 	letter-spacing: 0.2rem;
 	position: relative;
 	color: var(--color4);
+	text-shadow: 0 0 5px var(--color1);
+	z-index: 1;
 }
 
 .showcase__content--link:link::after,
@@ -225,8 +245,7 @@ div.showcase__content {
 	height: 100%;
 	transform: scaleX(0);
 	transform-origin: right;
-	transition: transform 0.45s;
-
+	transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
 	z-index: -1;
 }
 
@@ -236,7 +255,18 @@ div.showcase__content {
 	transform-origin: left;
 } 
 
-/*-*-**-**-**-**-**-**-**-**-** Main Nav Header *-**-**-**-**-**-**-**-**-* *-*/
+/*-*-**-**-**-**-**-**-**-**-** (max-width: 900px) Mark *-**-**-**-**-**-**-**-**-* *-*/
+@media screen and (max-width: 900px){
+/*-*-**-**-**-**-**-**-**-**-** Showcase / Hero *-**-**-**-**-**-**-**-**-* *-*/
+section#showcase {
+	background-position: 50%;
+	flex-direction: column-reverse;
+	align-items: start;
+	justify-content: space-between;
+}
+}
+
+/*-*-**-**-**-**-**-**-**-**-** (max-width: 610px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 610px) {
 
 	ul.header__main-nav--links li a {
