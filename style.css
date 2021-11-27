@@ -285,6 +285,14 @@ div.work__card img {
 	border-radius: 2rem;
 	background-attachment: fixed;
 	box-shadow: 0 0 15px rgb(58, 255, 9);
+	margin: 5px;
+	transition: filter 0.45s ease;
+}
+
+div.work__card img:hover,
+div.work__card img:active {
+	filter: hue-rotate(50deg);
+	box-shadow: 0 0 30px rgb(58, 255, 9);
 }
 
 
