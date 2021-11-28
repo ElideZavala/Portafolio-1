@@ -335,7 +335,20 @@ section#work .buttons .proyecto:hover {
 
 /*-*-**-**-**-**-**-**-**-** buttons *-**-**-**-**-**-**-**-**-*/
 section#about-me {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 2rem;
+	background-color: var(--color1);
+	height: 100vh;
+}
 
+.about-me__img,
+.about-me__content {
+	flex-basis: 40rem;
+	padding: 2rem;
+	/* flex-grow: 1; */
 }
 
 
