@@ -281,7 +281,7 @@ div.work__card {
 }
 
 div.work__card img {
-	height: 45vh;
+	height: 40vh;
 	width: 100%;
 	object-fit: cover;
 	border-radius: 2rem;
@@ -297,6 +297,7 @@ div.work__card img:active {
 	box-shadow: 0 0 30px rgb(58, 255, 9);
 }
 
+/*-*-**-**-**-**-**-**-**-** buttons *-**-**-**-**-**-**-**-**-*/
 
 section#work .buttons {
 	display: flex;
@@ -304,29 +305,35 @@ section#work .buttons {
 	justify-content: space-evenly;
 }
 
-section#work .buttons a {
+section#work .buttons .page {
 	color: var(--color1);
 	background-color: var(--color7);
 	padding: 0 1rem;
 	border-radius: 8px;
+	border-bottom: solid 2px #ff5073;
 }
-
-section#work .buttons a:hover {
-	transform: scale(.97);
-	background-color: #ff5073;
-}
-
 
 section#work .buttons .proyecto {
-	border: none;
-	box-sizing: none;
+	color: var(--color3);
 	background-color: var(--color8);
 	padding: 4px 1rem;
 	border-radius: 8px;	
-	font-size: 1.7rem;
-	color: var(--color3);
+	font-size: 1.8rem;
 	text-shadow: 0 0 10px var(--color2);
+	border-bottom: solid 2px #50cbff;
 }
+
+section#work .buttons .page:hover {
+	transform: scale(.97);
+	background-color: #ff5073;0
+}
+
+section#work .buttons .proyecto:hover {
+	transform: scale(.97);
+	background-color: #50cbff;
+}
+
+
 
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 900px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 900px){
@@ -368,13 +375,13 @@ section#showcase {
 		right:3rem;
 		cursor: pointer;	
 		background-color: var(--color5);
-		/* box-shadow: 0 0 15px var(--color3); */
 		padding: 1rem;
 		border-radius: 50%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;        
 		animation: light 1s alternate infinite;
+		z-index: 100;
 	}
 
 	@keyframes light {
