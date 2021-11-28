@@ -26,6 +26,8 @@ img {
 --color4m: #12121c8e;
 --color5: #180520;
 --color6:  #cbd2e2; 
+--color7: #ff5073c0;
+--color8: #50cbffb9;
 }
 
 body {
@@ -298,9 +300,33 @@ div.work__card img:active {
 
 section#work .buttons {
 	display: flex;
+	align-items: center;
 	justify-content: space-evenly;
 }
 
+section#work .buttons a {
+	color: var(--color1);
+	background-color: var(--color7);
+	padding: 0 1rem;
+	border-radius: 8px;
+}
+
+section#work .buttons a:hover {
+	transform: scale(.97);
+	background-color: #ff5073;
+}
+
+
+section#work .buttons .proyecto {
+	border: none;
+	box-sizing: none;
+	background-color: var(--color8);
+	padding: 4px 1rem;
+	border-radius: 8px;	
+	font-size: 1.7rem;
+	color: var(--color3);
+	text-shadow: 0 0 10px var(--color2);
+}
 
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 900px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 900px){
