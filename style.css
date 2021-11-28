@@ -325,7 +325,7 @@ section#work .buttons .proyecto {
 
 section#work .buttons .page:hover {
 	transform: scale(.97);
-	background-color: #ff5073;0
+	background-color: #ff5073;
 }
 
 section#work .buttons .proyecto:hover {
@@ -361,6 +361,7 @@ section#showcase {
 		right: -30rem;
 		background-color: var(--color4m);
 		text-align: center;
+		z-index: 5;
 	}
 	
 	.clicked {
@@ -381,7 +382,6 @@ section#showcase {
 		flex-direction: column;
 		justify-content: space-around;        
 		animation: light 1s alternate infinite;
-		z-index: 100;
 	}
 
 	@keyframes light {
