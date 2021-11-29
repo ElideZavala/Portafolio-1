@@ -342,6 +342,7 @@ section#about-me {
 	padding: 2rem;
 	background-color: var(--color1);
 	height: 100vh;
+	border-radius: 20px;
 }
 
 .about-me__img,
@@ -373,6 +374,17 @@ section#about-me {
 	height: 0.3rem;
 	width: 10%;
 	background-color: var(--color2);
+}
+
+.about-me__content--tittle,
+.about-me__content--para {
+	margin-bottom: 4rem;
+	letter-spacing: 0.2rem;
+}
+
+.about-me__content--para {
+	font-size: 1.8rem;
+	font-family: "Indie Flower", cursive;
 }
 
 
