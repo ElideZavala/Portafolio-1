@@ -340,7 +340,7 @@ section#about-me {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 2rem;
-	background-image: radial-gradient(circle at 85.63% -0.88%, #ffd288 0, #fed685 3.33%, #f4da85 6.67%, #e9dd86 10%, #dde189 13.33%, #d0e48d 16.67%, #c3e793 20%, #b6e99b 23.33%, #a8eca3 26.67%, #9aeead 30%, #8cefb8 33.33%, #7df0c3 36.67%, #6df1cf 40%, #5df2da 43.33%, #4cf2e6 46.67%, #3cf2f2 50%, #2df1fd 53.33%, #25f1ff 56.67%, #29efff 60%, #36eeff 63.33%, #49ecff 66.67%, #5de9ff 70%, #71e7ff 73.33%, #86e3ff 76.67%, #9ae0ff 80%, #addcff 83.33%, #bfd8ff 86.67%, #d1d4ff 90%, #e1d0ff 93.33%, #f0cbff 96.67%, #fec7ff 100%);
+	background-image: linear-gradient(90deg, #c6f3ff 0, #9db9f2 50%, #7582a1 100%);
 	/* height: 100vh; */
 	border-radius: 20px;
 }
