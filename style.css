@@ -31,7 +31,11 @@ img {
 --color9:  #3f6c51;
 --color10: #f39a9d;
 --color11: #ffeaec;
-
+--color12:#374924;
+--color13: #244948;
+--color14: #492424;
+--color15: #242449;
+--color16: #494824;
 }
 
 body {
@@ -432,10 +436,40 @@ section#services {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: nowrap;
-
 	padding: 6rem 2rem 2rem;
-	background-color: var(--color9);
+	background-color: var(--color13);
+	border-radius: 20px;
+	margin: 1ch;
 }
+
+.service {
+	padding: 4rem;
+	margin: 0 2rem 4rem;
+	flex-basis: 40rem;
+	flex-grow: 1;
+	color: var(--color6);
+	background-color: var(--color14);
+	border-bottom: 0.2rem solid var(--color14);
+	border-right: 0.2rem solid var(--color14);
+	border-left: 0.2rem solid var(--color14);
+	border-radius: 20px;
+	animation: shadow 1s alternate infinite;
+}
+
+@keyframes shadow {
+	0% {
+		box-shadow: 0 0 20px var(--color15);
+	}
+	50% { 
+		box-shadow: 0 0 20px var(--color16);
+	}
+
+	100% {
+		box-shadow: 0 0 20px var(--color13)
+	} 
+}
+
+
 
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 900px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 900px){
