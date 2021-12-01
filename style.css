@@ -28,6 +28,10 @@ img {
 --color6:  #cbd2e2; 
 --color7: #ff5073c0;
 --color8: #50cbffb9;
+--color9:  #3f6c51;
+--color10: #f39a9d;
+--color11: #ffeaec;
+
 }
 
 body {
@@ -340,9 +344,10 @@ section#about-me {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 2rem;
-	background-image: radial-gradient(circle at 50% -20.71%, #fbded2 0, #fad7cc 10%, #f8d0c6 20%, #f7c8c0 30%, #f5bfba 40%, #f2b5b5 50%, #efabb1 60%, #eba3af 70%, #e79bae 80%, #e294ae 90%, #dd8eb0 100%);
+	background-image: radial-gradient(circle at 85.36% -11.24%, #b9ffff 0, #9dffff 16.67%, #77ffff 33.33%, #3cf2f2 50%, #00dde5 66.67%, #00ccdc 83.33%, #00bed7 100%);
 	/* height: 100vh; */
 	border-radius: 20px;
+	margin: 1ch;
 }
 
 .about-me__img,
@@ -361,7 +366,7 @@ section#about-me {
 .about-me__content--title {
 	font-size: 4rem;
 	padding: 1rem 0;
-	color: var(--color4);
+	color: var(--color10);
 	text-transform: uppercase;
 	position: relative;
 }
@@ -373,7 +378,7 @@ section#about-me {
 	left: 0;
 	height: 0.3rem;
 	width: 10%;
-	background-color: var(--color2);
+	background-color: var(--color9);
 }
 
 .about-me__content--tittle,
@@ -391,10 +396,11 @@ section#about-me {
 .about-me__content--link:visited {
 	padding: 1rem 0;
 	font-size: 1.5rem;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 0.2rem;
 	text-transform: uppercase;
-	color: var(--color5);
+	color: var(--color9);
+	text-shadow: 0 0 3px var(--color11);
 	position: relative;
 	z-index: 1;
 }
