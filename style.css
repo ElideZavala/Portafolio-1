@@ -435,7 +435,7 @@ section#services {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	padding: 6rem 2rem 2rem;
 	background-color: var(--color13);
 	border-radius: 20px;
@@ -445,7 +445,7 @@ section#services {
 .service {
 	padding: 4rem;
 	margin: 0 2rem 4rem;
-	flex-basis: 40rem;
+	flex-basis: 45rem;
 	flex-grow: 1;
 	color: var(--color6);
 	background-color: var(--color14);
@@ -456,6 +456,7 @@ section#services {
 	animation: shadow 1s alternate infinite;
 
 	position: relative;
+	z-index: 1;
 }
 
 .service::after {
@@ -477,6 +478,23 @@ section#services {
 .service:active:after {
 	transform: scaleX(1);
 }
+
+.service i,
+.services--title {
+	margin-bottom: 2rem;
+	font-size: 3rem;
+}
+
+.services--title {
+	text-transform: uppercase;
+}
+
+.services--para {
+	font-family: 'IndieFlower', cursive;
+	font-size: 2rem;
+
+}
+
 
 @keyframes shadow {
 	0% {
