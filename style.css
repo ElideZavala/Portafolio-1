@@ -31,11 +31,12 @@ img {
 --color9:  #3f6c51;
 --color10: #f39a9d;
 --color11: #ffeaec;
---color12:#374924;
---color13: #244948;
---color14: #492424;
---color15: #242449;
---color16: #494824;
+--color12: #7c587e; 
+--color13: #4c3f77;
+--color14: #017f96;
+--color15: #051127;
+--color16: #bf2c58;
+
 }
 
 body {
@@ -534,7 +535,24 @@ section#skills {
 .skills__coding--title {
 	font-size: 3rem;
 	margin-bottom: 2rem;
+	display: flex; justify-content: center; 
 }
+
+.skills__design h4,
+.skills__coding h4 {
+	font-size: 2rem;
+	color: var(--color11);
+}
+
+.skills__design--progress,
+.skills__coding--progress {
+	position: relative; 
+	display: block;
+	padding: 0.5rem;	
+	border-radius: 3rem;
+	background-color: var(--color16);
+}
+
 
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 900px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 900px){
