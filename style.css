@@ -74,8 +74,8 @@ div.side-nav__content {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: var(--color4);
-	box-shadow: 0 0 20px var(--color2m);
+	background-color: var(--color3);
+	box-shadow: 0 0 25px var(--color3);
 }
 
 div.side-nav__content--logo {
@@ -438,7 +438,7 @@ section#services {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 6rem 2rem 2rem;
-	background-color: var(--color13);
+	background-color: var(--color15);
 	border-radius: 20px 20px 0 0;
 	margin: 0 1ch;
 }
@@ -467,7 +467,7 @@ section#services {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: var(--color12);
+	background-color: var(--color13);
 	transform: scaleX(0);
 	border-radius: 20px;
 	transition: transform 0.45s cubic-bezier(1, 0, 0, 1);
@@ -518,7 +518,7 @@ section#skills {
 	flex-wrap: wrap;
 	
 	padding: calc(1rem + 2vw);
-	background-color: var(--color13);
+	background-color: var(--color15);
 	margin-top: 0;
 	margin: 0 1ch;
 }
@@ -550,7 +550,7 @@ section#skills {
 	display: block;
 	padding: 0.5rem;	
 	border-radius: 3rem;
-	background-color: var(--color16);
+	background-color: var(--color3);
 }
 
 
