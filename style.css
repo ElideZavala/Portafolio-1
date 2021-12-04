@@ -526,7 +526,6 @@ section#skills {
 .skills__design,
 .skills__coding {
 	padding: calc(1rem + 2vw);
-	text-transform: uppercase;
 	flex-basis: 40rem;
 	flex-grow: 1;
 }
@@ -535,6 +534,7 @@ section#skills {
 .skills__coding--title {
 	color: var(--color16);
 	font-size: 3rem;
+	text-transform: uppercase;
 	margin-bottom: 2rem;
 	display: flex; justify-content: center; 
 }
@@ -591,7 +591,7 @@ section#skills {
 	}
 
 	100% {
-		width: 85%;
+		width: 87%;
 	}
 }
 
@@ -605,7 +605,7 @@ section#skills {
 	}
 
 	100% {
-		width: 60%;
+		width: 70%;
 	}
 }
 
@@ -622,6 +622,63 @@ section#skills {
 		width: 60%;
 	}
 }
+
+.skills__coding--progress__1 {
+	animation: coding-1 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-1 {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 80%;
+	}
+}
+
+.skills__coding--progress__2 {
+	animation: coding-2 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-2 {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 65%;
+	}
+}
+
+.skills__coding--progress__3 {
+	animation: coding-3 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-3 {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 65%;
+	}
+}
+
+.skills__coding--progress__4 {
+	animation: coding-4 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes coding-4 {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 40%;
+	}
+}
+
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 900px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 900px){
 /*-*-**-**-**-**-**-**-**-**-** Showcase / Hero *-**-**-**-**-**-**-**-**-* *-*/
