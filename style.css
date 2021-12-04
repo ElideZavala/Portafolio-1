@@ -811,11 +811,17 @@ section#showcase {
 		margin: 0 0 calc(1rem + 2vw);
 	}
 
-	.services--title {
+	.services--title,
+	.skills__design--title, 
+	.skills__coding--title {
 		font-size: calc(1.2rem + 2vw);
 	}
 
-	/* .services--para {
-		
-	} */
+	.services--para,
+	.skills__desing h4,
+	.skills__coding h4 {
+		font-size: calc(0.8rem + 1vw);	
+	}
+
+	/*-*-**-**-**-**-**-**-** Skills Section *-**-**-**-**-**-**-**-* *-*/
 }
