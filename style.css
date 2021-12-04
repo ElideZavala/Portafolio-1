@@ -551,7 +551,7 @@ section#skills {
 	display: block;
 	padding: 0.5rem;	
 	border-radius: 3rem;
-	background-color: var(--color3);
+	background-color: var(--color5);
 	width: 100%;
 	margin-bottom: 2rem;
 }
@@ -562,16 +562,66 @@ section#skills {
 	display: inline-block;
 	vertical-align: middle;
 	height: 2rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 10px var(--color16);
 	background-color: var(--color16);
-	/* width: 4rem; */
 }
 
-.skills__coding--progress__1 {
+.skills__design--progress__1 {
 	animation: design-1 4s infinite cubic-bezier(1, 0, 0, 1);
 }
 
+@keyframes design-1 {
+	0% {
+		width: 0;
+	}
 
+	100% {
+		width: 70%;
+	}
+}
 
+.skills__design--progress__2 {
+	animation: design-2 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes design-2 {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 85%;
+	}
+}
+
+.skills__design--progress__3 {
+	animation: design-3 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes design-3 {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 60%;
+	}
+}
+
+.skills__design--progress__4 {
+	animation: design-4 4s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes design-4 {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 60%;
+	}
+}
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 900px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 900px){
 /*-*-**-**-**-**-**-**-**-**-** Showcase / Hero *-**-**-**-**-**-**-**-**-* *-*/
