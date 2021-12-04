@@ -679,6 +679,13 @@ section#skills {
 	}
 }
 
+/*-*-**-**-**-**-**-**-**-**-** (max-width: 1510px) Mark *-**-**-**-**-**-**-**-**-* *-*/
+/* @media screen and (min-width: 1510px) {
+	body {
+		width: 1510px;
+		margin: 0 auto;
+	}
+} */
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 900px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 900px){
 /*-*-**-**-**-**-**-**-**-**-** Showcase / Hero *-**-**-**-**-**-**-**-**-* *-*/
