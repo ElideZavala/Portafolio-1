@@ -521,6 +521,7 @@ section#skills {
 	background-color: var(--color15);
 	margin-top: 0;
 	margin: 0 1ch;
+	border-radius: 0 0 20px 20px;
 }
 
 .skills__design,
@@ -677,6 +678,24 @@ section#skills {
 	100% {
 		width: 40%;
 	}
+}
+
+/*-*-**-**-**-**-**-**-**-**-** Courses Section *-**-**-**-**-**-**-**-**-* *-*/
+section#courses {
+	padding: calc(1rem + 2vw);
+	background-color: var(--color14);
+	color: white;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1ch;
+	border-radius: 20px
+}
+
+.courses__card {
+	padding: 2vw;
 }
 
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 1510px) Mark *-**-**-**-**-**-**-**-**-* *-*/
