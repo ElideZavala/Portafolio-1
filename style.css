@@ -712,12 +712,6 @@ section#courses {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
 }
 
-.courses__card img:hover {
-	filter: brightness(0.85);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8)
-}
-
-
 .course__card--content__title { 
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -743,8 +737,16 @@ section#courses {
 	transition: opacity 2s ease-in-out;
 }
 
-.courses__card:hover .course__card--content {
+.courses__card:hover .course__card--content, 
+.courses__card:active .course__card--content {
 	opacity: 1;
+}
+
+.courses__card:hover .courses__card--img img, 
+.courses__card:active .courses__card--img img {
+	filter: brightness(0.85);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	transform: scale(0.98);
 }
 
 
