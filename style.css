@@ -879,7 +879,8 @@ section#showcase {
 	ul.header__main-nav--links li.fade {
 		opacity: 1;
 	}
-
+		
+	/*-*-**-**-**-**-**-**-** Services Section *-**-**-**-**-**-**-**-* *-*/	
 	/*-*-**-**-**-**-**-**-** Services Section *-**-**-**-**-**-**-**-* *-*/
 	section#services {
 		padding: 6rem 3rem 2rem;
@@ -892,13 +893,15 @@ section#showcase {
 
 	.services--title,
 	.skills__design--title, 
-	.skills__coding--title {
+	.skills__coding--title,
+	.course__card--content__title {
 		font-size: calc(1.2rem + 2vw);
 	}
 
 	.services--para,
 	.skills__desing h4,
-	.skills__coding h4 {
+	.skills__coding h4,
+	.course__card--content__para {
 		font-size: calc(0.8rem + 1vw);	
 	}
 
