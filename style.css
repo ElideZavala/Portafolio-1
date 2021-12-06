@@ -682,7 +682,7 @@ section#skills {
 
 /*-*-**-**-**-**-**-**-**-**-** Courses Section *-**-**-**-**-**-**-**-**-* *-*/
 section#courses {
-	padding: calc(1rem + 2vw);
+	padding: calc(1rem + 4vw);
 	background-color: var(--color14);
 	color: white;
 	display: flex;
@@ -701,11 +701,6 @@ section#courses {
 	overflow: hidden;
 }
 
-.courses__card--img {
-	height: 100%;
-	width: 100%;
-}
-
 .courses__card img {
 	width: 100%;
 	height: 50rem;
@@ -714,19 +709,14 @@ section#courses {
 	cursor: url('image/cuaderno.png'), auto;
 	border-radius: 20px;
 	position: relative;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
 }
 
-.courses__card img::before {
-	content: "ELI";
-	background-color: #000;
-	width: 100%;
+.courses__card img:hover {
+	filter: brightness(0.85);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8)
 }
 
-
-/* .courses__card img:last-child {
-	width: 80%;
-	height: 80rem;
-} */
 
 .course__card--content__title { 
 	font-size: 3rem;
