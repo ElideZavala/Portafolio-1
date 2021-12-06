@@ -881,7 +881,7 @@ section#showcase {
 	}
 		
 	/*-*-**-**-**-**-**-**-** Services Section *-**-**-**-**-**-**-**-* *-*/	
-	/*-*-**-**-**-**-**-**-** Services Section *-**-**-**-**-**-**-**-* *-*/
+	/*-*-**-**-**-**-**-**-** Testimonial Section *-**-**-**-**-**-**-**-* *-*/
 	section#services {
 		padding: 6rem 3rem 2rem;
 	}
@@ -906,4 +906,30 @@ section#showcase {
 	}
 
 	/*-*-**-**-**-**-**-**-** Skills Section *-**-**-**-**-**-**-**-* *-*/
+}
+
+/*-*-**-**-**-**-**-**-**-**-** (max-width: 460px) Mark *-**-**-**-**-**-**-**-**-* *-*/
+@media screen and (max-width: 440px) {
+		/*-*-**-**-**-**-**-**-** Testimonial Section *-**-**-**-**-**-**-**-* *-*/
+
+		.course__card--content {
+			top: 0;
+			height: 100%;
+			width: 100%;
+			/* transform: scaleY(0); */
+			transform-origin: bottom;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.courses__card:hover .course__card--content,
+		.courses__card:active .course__card--content {
+			transform-origin: top;
+			transform: scaleY(1);
+			border-radius: 20px;
+			opacity: 0.75;
+		}
+
 }
