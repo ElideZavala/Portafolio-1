@@ -349,23 +349,67 @@ section#about-me {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 2rem;
-	/* background-image: radial-gradient(circle at 85.36% -11.24%, #b9ffff 0, #9dffff 16.67%, #77ffff 33.33%, #3cf2f2 50%, #00dde5 66.67%, #00ccdc 83.33%, #00bed7 100%); */
-	/* height: 100vh; */
 	background-color: var(--color15);
 	border-radius: 20px;
 	margin: 1ch;
 	position: relative;
 }
 
+section#about-me::after, 
+section#about-me::before {
+	display: block;
+	border-radius: 50%;
+}
+
+section#about-me .while:before, 
+section#about-me .while:after {
+	display: block;
+	border-radius: 50%;
+}
+
 section#about-me .while {
-	width: 9rem;
-	height: 9rem;
+	width: 13vmin;
+	height: 13vmin;
 	border-radius: 50%;
 	background-color: #000;
 	top: 8rem;
 	right: 8rem;
-	box-shadow: 0 0  80px rgba(241, 241, 144, 0.644);
+	filter: blur(2px);
+	box-shadow: 1vmin 0 3vmin 2vmin #f50,
+		inset -1vmin 0 3vmin 0 #f80,
+				-4vmin 0 35vmin 0 #f60;
+	animation: blackhole 5s linear infinite;
 	position: absolute;
+}
+
+@keyframes blackhole {
+	0% {
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+
+section#about-me .while:before, 
+section#about-me .while:after {
+	content: '';
+	background: white;
+	position: relative;
+	top: 1vmin;
+}
+
+section#about-me .while:before {
+	width: 1vmin;
+	box-shadow: yellow 0 0 10px 5px,
+		       yellow 1px 8px 10px 1px;
+}
+
+section#about-me .while:after {
+	width: 25vmin;
+	height: 25vmin;
+	opacity: 0.03;
+	left: -4vmin;
 }
 
 .about-me__img,
