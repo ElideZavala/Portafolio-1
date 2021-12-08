@@ -880,6 +880,27 @@ section#courses {
 	transform: scale(0.98);
 }
 
+/*-*-**-**-**-**-**-**-**-**-** Contact Section *-**-**-**-**-**-**-**-**-* *-*/
+section#contact {
+	margin: 0.5ch 1ch;
+	border-radius: 20px;
+	height: 100vh;
+	background: rgb(5,17,39);
+	background: linear-gradient(61deg, rgba(5,17,39,1) 0%, rgba(191,44,88,1) 100%);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact__form {
+	flex-basis: 40rem;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color14);
+	padding: 2rem;
+}
+
 
 
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 1510px) Mark *-**-**-**-**-**-**-**-**-* *-*/
