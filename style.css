@@ -900,8 +900,16 @@ section#contact {
 	flex-basis: 40rem;
 	display: flex;
 	flex-direction: column;
-	background-color: var(--color14);
 	border-radius: 20px;
+	box-shadow:7px 7px 70px #000;
+	overflow: hidden;
+}
+
+.contact-us {
+	font-size: 2rem;
+	margin: 1rem;
+	color: var(--color11);
+	text-shadow: 0 5px 15px var(--color15);
 }
 
 .contact__form input,
@@ -918,7 +926,7 @@ section#contact {
 
 .contact__form input::placeholder,
 .contact__form textarea::placeholder{
-	color: var(--color11);
+	color: #929191;
 }
 
 .contact__form textarea {
@@ -930,7 +938,13 @@ input[type=submit] {
 	cursor: pointer;
 	background-color: var(--color15);
 	border-radius: 0 0 20px 20px;
+	transition: all .3s ease
 } 
+
+input[type=submit]:hover {
+	opacity: 1;
+	background-color: #02081a;
+}
 
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 1510px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 /* @media screen and (min-width: 1510px) {
