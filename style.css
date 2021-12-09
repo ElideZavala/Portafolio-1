@@ -353,6 +353,7 @@ section#about-me {
 	border-radius: 20px;
 	margin: 1ch;
 	position: relative;
+	overflow: hidden;
 }
 
 .about-me__img {
@@ -889,19 +890,47 @@ section#contact {
 	background: linear-gradient(61deg, rgba(5,17,39,1) 0%, rgba(191,44,88,1) 100%);
 
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
 .contact__form {
+	width: 38rem;
 	flex-basis: 40rem;
 	display: flex;
 	flex-direction: column;
 	background-color: var(--color14);
-	padding: 2rem;
+	border-radius: 20px;
 }
 
+.contact__form input,
+.contact__form textarea {
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.5rem;
+	letter-spacing: 0.2rem;
+	padding: 2rem;
+	background: transparent;
+	border: none;
+	border-bottom: solid 0.1rem var(--color11);
+}
 
+.contact__form input::placeholder,
+.contact__form textarea::placeholder{
+	color: var(--color11);
+}
+
+.contact__form textarea {
+	height: 30vh;
+}
+
+input[type=submit] {
+	border: none;
+	cursor: pointer;
+	background-color: var(--color15);
+	border-radius: 0 0 20px 20px;
+} 
 
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 1510px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 /* @media screen and (min-width: 1510px) {
@@ -1084,4 +1113,8 @@ section#showcase {
 			opacity: 0.75;
 		}
 
+		/*-*-**-**-**-**-**-**-**-** Contact Section *-**-**-**-**-**-**-**-**-*/
+		/* section#contact {
+
+		} */
 }
