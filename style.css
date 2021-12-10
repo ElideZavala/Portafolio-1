@@ -1115,10 +1115,6 @@ input[type=submit]:hover {
 		justify-content: space-between;
 	}
 
-	section#about-me {
-		
-	}
-
 	section#about-me .while {
 		width: 8vmin;
 		height: 8vmin;
@@ -1131,6 +1127,12 @@ input[type=submit]:hover {
 		height: 20vmin;
 		opacity: 0.03;
 		left: -3vmin;
+	}
+	
+	.star:nth-child(5) {
+		top: calc(50% - 100px);
+		left: calc(50% - 50px);
+		animation-delay: 2100ms;
 	}
 }
 
