@@ -3,6 +3,7 @@ const hamburger = document.querySelector('.header__main--hamburger');
 const links = document.querySelectorAll('.header__main-nav--links li');
 
 const $form = document.getElementById('form'); 
+const $buttonMalito = document.getElementById('trucazo'); 
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const subjectInput = document.getElementById('subject');
@@ -25,28 +26,26 @@ function handleSubmit(e) {
 
 	// const form = new FormData(this);
 	// console.log(form.get('name'))
-
-	const date = {
-		name : nameInput.value, 
-		email : emailInput.value,
-		subject : subjectInput.value,
-		message : messageInput.value 
-	}
-
-	console.log(date.name, date.email);
 }
 
 function ckeckValue(input) {
 	if(input === '') {
 		sendMsg("The mail is required");
 	} else {
-		sent(input.trim());
-		// cleanValue();
-	}
-}
+		const date = {
+			name : nameInput.value, 
+			email : emailInput.value,
+			subject : subjectInput.value,
+			message : messageInput.value 
+		}
+	
+		$buttonMalito.setAttribute('href', `mailto:zavalavinagreelide@gmail.com?subject=${date.name} ${date.subject}=&body=${date.message}`);
+		$buttonMalito.click();
 
-function sent(sentEmail) {
-	sendMsg("The message was send")
+		sendMsg("The message was send")
+
+		cleanValue();
+	}
 }
 
 function sendMsg(msj) {
