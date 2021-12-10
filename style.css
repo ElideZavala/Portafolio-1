@@ -364,7 +364,7 @@ section#about-me {
 	position: relative;
 	/* width: 600px;
 	height: 400px; */
-	background-size: 100% 100%;
+	background-size: 100%;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -1108,12 +1108,30 @@ input[type=submit]:hover {
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 900px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 900px){
 /*-*-**-**-**-**-**-**-**-**-** Showcase / Hero *-**-**-**-**-**-**-**-**-* *-*/
-section#showcase {
-	background-position: 50%;
-	flex-direction: column-reverse;
-	align-items: start;
-	justify-content: space-between;
-}
+	section#showcase {
+		background-position: 50%;
+		flex-direction: column-reverse;
+		align-items: start;
+		justify-content: space-between;
+	}
+
+	section#about-me {
+		
+	}
+
+	section#about-me .while {
+		width: 8vmin;
+		height: 8vmin;
+		top: 5rem;
+		right: 5rem;
+	}
+
+	section#about-me .while:after {
+		width: 20vmin;
+		height: 20vmin;
+		opacity: 0.03;
+		left: -3vmin;
+	}
 }
 
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 610px) Mark *-**-**-**-**-**-**-**-**-* *-*/
