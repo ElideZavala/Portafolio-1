@@ -1115,6 +1115,12 @@ input[type=submit]:hover {
 		justify-content: space-between;
 	}
 
+	/*-*-**-**-**-**-**-**-** about-me Section *-**-**-**-**-**-**-**-* *-*/
+	.about-me__img .face {
+		display: flex;
+		justify-content: flex-end;
+	}
+
 	section#about-me .while {
 		width: 8vmin;
 		height: 8vmin;
@@ -1313,7 +1319,31 @@ input[type=submit]:hover {
 		}
 
 		/*-*-**-**-**-**-**-**-**-** Contact Section *-**-**-**-**-**-**-**-**-*/
-		/* section#contact {
+		.contact__form {
+			width: 28rem;
+		}
 
-		} */
+		@keyframes tail {
+			0% {
+				width: 0;
+			}
+			30% {
+				width: 50px;
+			}
+			100% {
+				width: 0;
+			}
+		}
+		
+		@keyframes shining  {
+			0% {
+				width: 0;
+			}
+			50% {
+				width: 70px;
+			}
+			100% {
+				width: 0;
+			}
+		}
 }
