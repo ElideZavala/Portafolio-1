@@ -192,7 +192,7 @@ ul.header__main-nav--links li a:active::after {
 /*-*-**-**-**-**-**-**-**-**-** Showcase / Hero *-**-**-**-**-**-**-**-**-* *-*/
 section#showcase {
 	height: 100vh;
-	background-image: url(image/cosmos.jpg);
+	background-image: url(image/cosmos.webp);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -390,7 +390,7 @@ section#about-me {
 }
 
 .about-me__img .face.face1 span{
-	background: url(image/posyo.jpg); 
+	background: url(image/posyo.webp); 
 	background-size: cover;
 	background-repeat: no-repeat;
 	transform-origin: top;
@@ -401,7 +401,7 @@ section#about-me {
 }
 
 .about-me__img .face.face2 span{
-	background: url(image/banner.jpg);
+	background: url(image/banner.webp);
 	background-size: cover;
 	background-repeat: no-repeat;
 	transform-origin: bottom;
@@ -1091,12 +1091,11 @@ input[type=submit] {
 	transition: all .3s ease
 } 
 
-input[type=submit]:hover {
+input[type=submit]:hover,
+input[type=submit]:active {
 	opacity: 1;
 	background-color: #02081a;
 }
-
-
 
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 1510px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 /* @media screen and (min-width: 1510px) {
@@ -1142,7 +1141,7 @@ input[type=submit]:hover {
 	}
 }
 
-
+/*-*-**-**-**-**-**-**-**-**-** (max-width: 800px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 800px) {
 	.about-me__img .face {
 		width: 100vh;
@@ -1324,6 +1323,12 @@ input[type=submit]:hover {
 			transform: scaleY(1);
 			border-radius: 20px;
 			opacity: 0.75;
+		}
+
+		/*-*-**-**-**-**-**-**-**-** About-me Section *-**-**-**-**-**-**-**-**-*/
+		.about-me__img .face {
+			width: 100vh;
+			justify-content: center;
 		}
 
 		/*-*-**-**-**-**-**-**-**-** Contact Section *-**-**-**-**-**-**-**-**-*/
