@@ -60,5 +60,3 @@ function cleanValue() {
 	subjectInput.value = '';
 	messageInput.value = '';
 }
-
-
