@@ -59,4 +59,4 @@ function cleanValue() {
 	emailInput.value = '';
 	subjectInput.value = '';
 	messageInput.value = '';
-}
+}				
