@@ -23,9 +23,6 @@ $form.addEventListener('submit', handleSubmit )
 function handleSubmit(e) {
 	e.preventDefault(); 
 	ckeckValue(emailInput.value);
-
-	// const form = new FormData(this);
-	// console.log(form.get('name'))
 }
 
 function ckeckValue(input) {
