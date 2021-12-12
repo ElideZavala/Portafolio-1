@@ -435,7 +435,7 @@ section#work {
 	justify-content: center;
 	padding: 2rem;
 	border-radius: 50px;
-	background-image: url(image/green2.jpeg);
+	background-image: url(image/universe2.jfif);
 	background-repeat: no-repeat;
 	object-fit: cover;
 	background-attachment: fixed;
@@ -444,7 +444,7 @@ section#work {
 
 div.work__card {
 	padding: 2rem;
-	flex-basis: 40rem;
+	flex-basis: 35rem;
 	filter:alpha(opacity=70);
 	background-color: rgba(255, 255, 255, 0.192);
 	border-radius: 20px;
@@ -452,12 +452,12 @@ div.work__card {
 }
 
 div.work__card img {
-	height: 40vh;
+	height: 30vh;
 	width: 100%;
 	object-fit: cover;
 	border-radius: 2rem;
 	background-attachment: fixed;
-	box-shadow: 0 0 15px rgb(58, 255, 9);
+	box-shadow: 0 0 35px rgb(101, 199, 77);
 	margin: 5px;
 	transition: filter 0.45s ease;
 }
@@ -465,7 +465,7 @@ div.work__card img {
 div.work__card img:hover,
 div.work__card img:active {
 	filter: hue-rotate(50deg);
-	box-shadow: 0 0 30px rgb(58, 255, 9);
+	box-shadow: 0 0 50px rgb(101, 199, 77);
 }
 
 /*-*-**-**-**-**-**-**-**-** buttons *-**-**-**-**-**-**-**-**-*/
