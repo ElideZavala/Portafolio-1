@@ -113,8 +113,6 @@ ul.side-nav__content--social a i:active {
 /*-*-**-**-**-**-**-**-**-**-** Lado universe *-**-**-**-**-**-**-**-**-* *-*/
 .universe {
 	display: flex;
-	/* justify-content: center; */
-	/* align-items: center; */
 	position: relative;
 	z-index: 1;
 }
@@ -1299,6 +1297,116 @@ input[type=submit]:active {
 		left: calc(50% - 50px);
 		animation-delay: 2100ms;
 	}
+
+	.universe {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+	}
+
+	.sun {
+		height: 6rem;
+		width: 6rem;
+		background-image: url(image/imgenes/sun-2png.png);
+		left: 40vmin;
+		top: 30rem;
+	}
+
+	.mercury {
+		height: 1rem;
+		width: 1rem;
+		left: 44.5vmin;
+		top: 32.5rem;
+	}
+
+	@keyframes orbit2 {
+		from{transform: rotate(0deg)translateX(4.5rem) rotate(0deg);}
+		to{transform: rotate(360deg)translateX(4.5rem) rotate(-360deg);}
+	}
+
+	.venus {
+		height: 1.4rem;
+		width: 1.4rem;
+		left: 44.5vmin;
+		top: 32.5rem;
+	}
+	
+	@keyframes orbit3 {
+		from{transform: rotate(0deg)translateX(6rem) rotate(0deg);}
+		to{transform: rotate(360deg)translateX(6rem) rotate(-360deg);}
+	}
+
+	.earth {
+		height: 1.7rem;
+		width: 1.7rem;
+		left: 44.5vmin;
+		top: 32.5rem;
+	}
+	
+	@keyframes orbit4 {
+		from{transform: rotate(0deg)translateX(7.5rem) rotate(0deg);}
+		to{transform: rotate(360deg)translateX(7.5rem) rotate(-360deg);}
+	}
+
+	.mars {
+		height: 1.5rem;
+		width: 1.5rem;
+		left: 44.5vmin;
+		top: 32.5rem;
+	}
+	
+	@keyframes orbit5 {
+		from{transform: rotate(0deg)translateX(8.5rem) rotate(0deg);}
+		to{transform: rotate(360deg)translateX(8.5rem) rotate(-360deg);}
+	}
+
+	.jupiter {
+		height: 3rem;
+		width: 3rem;
+		left: 44.5vmin;
+		top: 32.5rem;
+	}
+	
+	@keyframes orbit6 {
+		from{transform: rotate(0deg)translateX(12.5rem) rotate(0deg);}
+		to{transform: rotate(360deg)translateX(12.5rem) rotate(-360deg);}
+	}
+
+	.saturn {
+		height: 2.5rem;
+		width: 2.5rem;
+		left: 44.5vmin;
+		top: 32.5rem;
+	}
+	
+	@keyframes orbit7 {
+		from{transform: rotate(0deg)translateX(16rem) rotate(0deg);}
+		to{transform: rotate(360deg)translateX(16rem) rotate(-360deg);}
+	}
+
+	.uranus {
+		height: 2.4rem;
+		width: 2.4rem;
+		left: 44.5vmin;
+		top: 32.5rem;
+	}
+	
+	@keyframes orbit8 {
+		from{transform: rotate(0deg)translateX(18.5rem) rotate(0deg);}
+		to{transform: rotate(360deg)translateX(18.5rem) rotate(-360deg);}
+	}
+
+	.neptune {
+		height: 2.2rem;
+		width: 2.2rem;
+		left: 44.5vmin;
+		top: 32.5rem;
+	}
+	
+	@keyframes orbit9 {
+		from{transform: rotate(0deg)translateX(21rem) rotate(0deg);}
+		to{transform: rotate(360deg)translateX(21rem) rotate(-360deg);}
+	}
 }
 
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 800px) Mark *-**-**-**-**-**-**-**-**-* *-*/
@@ -1461,6 +1569,12 @@ input[type=submit]:active {
 	/*-*-**-**-**-**-**-**-** Skills Section *-**-**-**-**-**-**-**-* *-*/
 }
 
+@media screen and (max-width: 500px) {
+	.neptune {
+		display: none;
+	}
+}
+
 /*-*-**-**-**-**-**-**-**-**-** (max-width: 460px) Mark *-**-**-**-**-**-**-**-**-* *-*/
 @media screen and (max-width: 440px) {
 		/*-*-**-**-**-**-**-**-** Testimonial Section *-**-**-**-**-**-**-**-* *-*/
@@ -1519,4 +1633,14 @@ input[type=submit]:active {
 				width: 0;
 			}
 		}
+
+		.uranus {
+			display: none;
+		}
+}
+
+@media screen and (max-width: 350px) {
+	.saturn {
+		display: none;
+	}
 }
