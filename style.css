@@ -282,7 +282,7 @@ main {
 
 /*-*-**-**-**-**-**-**-**-**-** Main Nav Header *-**-**-**-**-**-**-**-**-* *-*/
 header#header {
-	background-color: var(--color1);
+	background-color: var(--color6);
 	height: calc(3vw + 3vh);
 	z-index: 2;
 }
@@ -457,7 +457,7 @@ div.work__card img {
 	object-fit: cover;
 	border-radius: 2rem;
 	background-attachment: fixed;
-	box-shadow: 0 0 35px rgb(101, 199, 77);
+	box-shadow: 0 0 35px rgba(0, 0, 0, 0.45);
 	margin: 5px;
 	transition: filter 0.45s ease;
 }
@@ -465,7 +465,7 @@ div.work__card img {
 div.work__card img:hover,
 div.work__card img:active {
 	filter: hue-rotate(50deg);
-	box-shadow: 0 0 50px rgb(101, 199, 77);
+	box-shadow: 0 0 50px #24aa98;
 }
 
 /*-*-**-**-**-**-**-**-**-** buttons *-**-**-**-**-**-**-**-**-*/
@@ -477,31 +477,35 @@ section#work .buttons {
 }
 
 section#work .buttons .page {
-	color: var(--color1);
-	background-color: var(--color7);
+	color: var(--color5);
+	background-color: var(--color10);
 	padding: 0 1rem;
 	border-radius: 8px;
-	border-bottom: solid 2px #ff5073;
+	border-bottom: solid 2px #ff7350;
+	box-shadow: 0 3px 10px #ff7350;
 }
 
 section#work .buttons .proyecto {
-	color: var(--color3);
-	background-color: var(--color8);
+	color: var(--color6);
+	background-color: #10613f;
 	padding: 4px 1rem;
 	border-radius: 8px;	
 	font-size: 1.8rem;
 	text-shadow: 0 0 10px var(--color2);
-	border-bottom: solid 2px #50cbff;
+	border-bottom: solid 2px #083a25;
+	box-shadow: 0 3px 10px #083a25;
 }
 
-section#work .buttons .page:hover {
+section#work .buttons .page:hover, 
+section#work .buttons .page:active {
 	transform: scale(.97);
-	background-color: #ff5073;
+	/* background-color: #ff5073; */
 }
 
-section#work .buttons .proyecto:hover {
+section#work .buttons .proyecto:hover,
+section#work .buttons .proyecto:active {
 	transform: scale(.97);
-	background-color: #50cbff;
+	/* background-color: #50cbff; */
 }
 
 /*-*-**-**-**-**-**-**-**-** buttons *-**-**-**-**-**-**-**-**-*/
