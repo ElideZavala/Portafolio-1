@@ -283,8 +283,10 @@ main {
 /*-*-**-**-**-**-**-**-**-**-** Main Nav Header *-**-**-**-**-**-**-**-**-* *-*/
 header#header {
 	background-color: var(--color6);
-	height: calc(3vw + 3vh);
+	height: calc(3vw + 2vh);
+	width: 98%;
 	z-index: 2;
+	position: fixed;
 }
 
 nav#header__main-nav {
