@@ -1643,6 +1643,15 @@ input[type=submit]:active {
 		.uranus {
 			display: none;
 		}
+		section#work .buttons .page {
+			padding: 0 0.5rem;
+			font-size: 1.5rem;
+		}
+
+		section#work .buttons .proyecto {
+			padding: 0 0.5rem;
+			font-size: 1.5rem;
+		}
 }
 
 @media screen and (max-width: 350px) {
